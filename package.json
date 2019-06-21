@@ -1,0 +1,39 @@
+{
+  "name": "terra-javascript-library",
+  "version": "1.0.7",
+  "description": "This package provides Terra Blockchain client side APIs to support building transaction, singing, or querying chain data.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "build": "tsc --declaration"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunSuk-Yeo/terra-javascript-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YunSuk-Yeo/terra-javascript-library/issues"
+  },
+  "keywords": [
+    "terra",
+    "luna",
+    "core",
+    "terra",
+    "blockchain"
+  ],
+  "author": "YunSuk-Yeo",
+  "homepage": "https://github.com/YunSuk-Yeo/terra-javascript-library",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/bech32": "^1.1.1",
+    "@types/node": "^12.0.8",
+    "bech32": "^1.1.3",
+    "bip32": "^2.0.3",
+    "bip39": "^3.0.2",
+    "crypto-js": "^3.1.9-1",
+    "secp256k1": "^3.7.1",
+    "typescript": "^3.5.1"
+  }
+}
