@@ -1,6 +1,6 @@
 {
   "name": "terra-javascript-library",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This package provides Terra Blockchain client side APIs to support building transaction, singing, or querying chain data.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
