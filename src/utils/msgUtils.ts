@@ -8,12 +8,12 @@ export interface Coin {
 
 export interface Fee {
   gas: string
-  amount: Coin[]
+  amount: Array<Coin>
 }
 
 export interface InOut {
   address: string
-  coins: Coin[]
+  coins: Array<Coin>
 }
 
 export interface Signature {
@@ -60,8 +60,8 @@ export function generateVoteHash (
 export interface StdTxValue {
   fee: Fee
   memo: string
-  msg: object[]
-  signatures: Signature[]
+  msg: Array<object>
+  signatures: Array<Signature>
 }
 export interface StdTx {
   type: string
@@ -69,7 +69,7 @@ export interface StdTx {
 }
 
 export function buildStdTx (
-  msg: object[], 
+  msg: Array<object>, 
   fee: Fee, 
   memo: string
 ): StdTx {
@@ -143,14 +143,14 @@ export function buildPriceVote (
 interface MsgSend {
   type: string,
   value: {
-    amount: [Coin],
+    amount: Array<Coin>,
     from_address: string,
     to_address: string,
   }
 }
 
 export function buildSend(
-  amount: [Coin], 
+  amount: Array<Coin>, 
   fromAddress: string, 
   toAddress: string
 ):MsgSend {
@@ -167,14 +167,14 @@ export function buildSend(
 interface MsgMultiSend {
   type: string,
   value: {
-    inputs: [InOut],
-    outputs: [InOut]
+    inputs: Array<InOut>,
+    outputs: Array<InOut>
   }
 }
 
 export function buildMultiSend(
-  inputs: [InOut], 
-  outputs: [InOut]
+  inputs: Array<InOut>, 
+  outputs: Array<InOut>
 ): MsgMultiSend {
   return {
     type: 'pay/MsgMultiSend',
